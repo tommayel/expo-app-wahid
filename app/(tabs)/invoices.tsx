@@ -18,7 +18,7 @@ export default function TabTwoScreen() {
 
   const fetchInvoices = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/invoices');
+      const response = await fetch('http://crebon.co.uk/api/invoices');
       const data = await response.json();
       setInvoices(data);
     } catch (e) {
